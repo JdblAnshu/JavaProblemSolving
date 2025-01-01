@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/AlgorithmSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ArraySeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/DynamicProgrammingSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/GraphSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/LinkedListSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/MostAskedInterviewQuestions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/SearchingSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/SortingSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/StringSeries" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/TreeSeries" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
