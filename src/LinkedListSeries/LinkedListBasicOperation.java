@@ -1,30 +1,77 @@
 public class LinkedListBasicOperation {
 
-	public static Node insertAtStart(Node head){
+	public static Node insertAtStart(Node head , int number) {
+
+		Node newNode = new Node(number);
+		if(head == null){
+			return newNode;
+		}
+
+		newNode.next = head;
+		return newNode;
+	}
+
+
+	public static void printLinkedList(Node head) {
+
+		System.out.println("Inside printLinkedList: ");
 		Node temp = head;
-
-		Node newNode = new Node(45);
-		
-
-
-	return head;
-	}
-
-
-	public static void printLinkedList(){
+		while(temp!=null){
+			System.out.print(temp.data + " ");
+			temp = temp.next;
+		}
 
 	}
 
 
-	public static void insertAfterGivenNodeLinkedList(){
+	public static void insertAfterGivenNodeLinkedList(Node head, int numToInsert) {
+		Node curr = head;
+		Node temp = null;
+
+		while (curr!=null){
+			if (curr.data==4)
+				break;
+			curr = curr.next;
+		}
+
+//		temp = curr.next;
+//		curr.next = new Node(num);
+//		curr.next.next = temp;
+
+		//Alternate approach
+		Node newNode = new Node(numToInsert);
+		newNode.next = curr.next;
+		curr.next = newNode;
+
+		printLinkedList(head);
+
+
 
 	}
 
 
-	public static void insertBeforeGivenNodeLinkedList(){
+	public static void insertBeforeGivenNodeLinkedList(Node head, int numToInsert) {
+
+		Node curr = head;
+		Node temp = null;
+
+		while (curr!=null){
+			if (curr.next.data==7)
+				break;
+			curr = curr.next;
+		}
+
+		Node newNode = new Node(numToInsert);
+		newNode.next = curr.next;
+		curr.next = newNode;
+
+		printLinkedList(head);
 
 	}
 
+	public static void insertNodeAtGivenPositionLinkedList() {
+
+	}
 
 
 	public static void main(String[] args) {
@@ -36,16 +83,14 @@ public class LinkedListBasicOperation {
 		head.next.next.next.next = new Node(5);
 		head.next.next.next.next.next = new Node(7);
 
-		Node temp = insertAtStart(head);
+		//Node temp = insertAtStart(null,89);
 
 
-		while (temp!=null){
-			System.out.print(temp.data + " ");
-			temp = temp.next;
-		}
+		insertAfterGivenNodeLinkedList(head,456);
+
+		insertBeforeGivenNodeLinkedList(head, 55);
 
 	}
-
 
 
 }
