@@ -15,14 +15,15 @@ Find all permutation of number or string
 Check list of question after : Check binary tree is balanced or not
 
 TODO
-Reverse the string with and without using in built functions.
-Check if given string is plaindrome.
-Count number of vowel and consonants in string.
-Find longest substring without repeating character.
-Check if string only contains only digit.
-Remove all punctuations from string.
-String builder vs String buffer.
-Swap case of each character in string.
+Reverse the string with and without using in built functions. - Done
+Check if given string is plaindrome. - Done
+Count number of vowel and consonants in string. - Done
+Sliding window approach. TODO VVI
+Find longest substring without repeating character. TODO VVI
+Check if string only contains only digit.-Done
+Remove all punctuations from string.-TODO VVI
+String builder vs String buffer. -Done
+Swap case of each character in string.-Done
 Find first non-repeating character in string.
 Convert string to char array and back.
 Count number of words in string using regex.
