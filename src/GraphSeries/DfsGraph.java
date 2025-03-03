@@ -63,3 +63,21 @@ class DfsGraph {
 		DFS(adj, source);
 	}
 }
+
+/*
+
+dfs(List, node, visited )
+{
+mark node as visited
+dfs(list, node , visited)
+}
+
+ */
+
+
+
+
+
+
+
+
