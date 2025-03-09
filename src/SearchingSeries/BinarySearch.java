@@ -1,4 +1,11 @@
 public class BinarySearch {
+
+
+	/*
+	Aspect	Complexity
+	Time Complexity	O(log n)
+	Space Complexity	O(1)
+	 */
 	public static int search(int[] arr, int target) {
 		int low = 0;
 		int high = arr.length - 1;

@@ -35,7 +35,7 @@ public class Employee {
 
 	public void setId(int id) {
 		this.id = id;
-	}
+}
 
 	public String getName() {
 		return name;
@@ -43,7 +43,7 @@ public class Employee {
 
 	public void setName(String name) {
 		this.name = name;
-	}
+}
 
 	public String getDepartment() {
 		return department;

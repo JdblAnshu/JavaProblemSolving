@@ -17,16 +17,14 @@ public class MiddleElementLinkedList {
 
 		Node slow = head;
 		Node fast = head;
-		while(fast.next!=null && fast.next.next!=null){
+		while(fast!=null && fast.next!=null){
 			slow = slow.next;
 			fast = fast.next.next;
 		}
 
-		if(fast.next == null){ // for odd case
+
 			System.out.println("Middle element " + slow.data);
-		}else {
-			System.out.println("Middle element " + slow.next.data);
-		}
+
 
 	}
 
