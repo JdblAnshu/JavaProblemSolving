@@ -15,6 +15,9 @@ public class SwapCaseString {
 
 		}
 
+
 		System.out.println(sb);
 	}
 }
+
+

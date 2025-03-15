@@ -27,11 +27,16 @@ public class ReverseString {
 		String s1 = "knowledge";
 		String s2 = s1;
 		s1 = s1.concat(" base");
+		System.out.println("Value of s2 is : " + s2);
 		System.out.println(s1);
 
 		String s3 = "Test1";
 		String s4 = "Test1";
 		System.out.println("Value of String " + (s3 == s4) );
+
+		System.out.println(s3.hashCode());
+		System.out.println(s4.hashCode());
+
 
 		String s5 = "Test6";
 		StringBuilder sb = new StringBuilder("Test6");
@@ -41,8 +46,7 @@ public class ReverseString {
 		System.out.println(s5.hashCode());
 		System.out.println(sb.hashCode());
 
-		System.out.println(s3.hashCode());
-		System.out.println(s4.hashCode());
+
 
 		//StringBuffer: Is thread-safe, meaning its methods are synchronized. This ensures that only one thread can access the method at a time, which can prevent issues when multiple threads are modifying a StringBuffer object concurrently.
 		//StringBuilder: Is not thread-safe because its methods are not synchronized. This can lead to performance benefits in single-threaded applications or scenarios where thread safety is not a concern, as it avoids the overhead of synchronization.
