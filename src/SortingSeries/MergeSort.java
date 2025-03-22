@@ -1,8 +1,11 @@
 
 //Is Merge sort In Place? - No, Merge sort is not an in place algorithm.we use an additional array to merge the subarrays in sorted
 //Is Merge sort Stable? Yes, merge sort is stable the relational ordering of the elements with same value remains unchanged.
-
-
+/*
+Stability : Merge sort is a stable sorting algorithm, which means it maintains the relative order of equal elements in the input array.
+Guaranteed worst-case performance: Merge sort has a worst-case time complexity of O(N logN) , which means it performs well even on large datasets.
+ */
+//Done
 public class MergeSort {
 
 

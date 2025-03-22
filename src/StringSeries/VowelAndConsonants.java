@@ -1,6 +1,6 @@
 public class VowelAndConsonants {
 
-
+//Done
 	public static void main(String[] args) {
 		//Check for vowel and consonants
 
@@ -8,6 +8,7 @@ public class VowelAndConsonants {
 		str = str.toLowerCase();
 		int vowelCount = 0;
 		int consonantCount = 0;
+
 
 		for(int i = 0; i< str.length();i++){
 			char ch = str.charAt(i);

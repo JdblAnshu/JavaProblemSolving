@@ -1,7 +1,7 @@
 public class RotateArrayLeft {
 
 //Following reversal algorithm - check striver solution
-
+//Done
 	public static void Reverse(int[] arr, int start, int end) {
 		while (start <= end) {
 			int temp = arr[start];
@@ -25,6 +25,10 @@ public class RotateArrayLeft {
 	//0 ----> k-1
 	//k ----> n-1
 	//
+
+//	0 to n-k -1
+//	n-k to n-1
+
 
 
 	public static void main(String[] args) {

@@ -1,5 +1,8 @@
 package Matrix;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class RotateMatrix {
 	/*
 	rotate matrix:
@@ -23,4 +26,17 @@ public void rotate(int[][] matrix) {
             }
         }
 	 */
+
+
+	public static void main(String[] args) {
+		int[] arr={1,2,3,4,51,6};
+		int high = arr.length - 1;
+		for(int i=0;i< arr.length/2;i++){
+			int temp = arr[i];
+			arr[i] = arr[arr.length - 1 -i];
+			arr[high] = temp;
+			//high--;
+		}
+		System.out.println(Arrays.toString(arr));
+	}
 }

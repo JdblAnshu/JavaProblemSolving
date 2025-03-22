@@ -1,3 +1,4 @@
+//Done
 public class NumberOfIslands {
 
 	//https://leetcode.com/problems/number-of-islands/description/
@@ -58,3 +59,4 @@ public class NumberOfIslands {
 //		}
 //	}
 }
+//grid[newRow][newCol] == '1' means not visited yet make it 0 or water 1 is land

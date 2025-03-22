@@ -1,6 +1,6 @@
 public class FindLoopInLinkedList {
 
-
+//Done
 	public static boolean findLoopInLinkedList(Node head){
 			Node slow = head;
 			Node fast = head;

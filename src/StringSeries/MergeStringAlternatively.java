@@ -1,3 +1,4 @@
+//Done
 public class MergeStringAlternatively {
 
 //	Input : string 1 :"geeks"
@@ -22,3 +23,4 @@ public class MergeStringAlternatively {
 
 	}
 }
+

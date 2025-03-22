@@ -1,5 +1,5 @@
 public class LcmAndGcd {
-
+//Done
 	/*
 	static int gcd(int a, int b) {
 

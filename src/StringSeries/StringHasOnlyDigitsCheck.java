@@ -1,8 +1,10 @@
+//Done
 public class StringHasOnlyDigitsCheck {
 
 	public static void main(String[] args) {
 		String str = "123134";//"1234a"
 
+		//str.chars().allMatch(Character::isDigit);
 		boolean isOnlyDigits = str.chars().allMatch(Character::isDigit);
 		System.out.println(isOnlyDigits);
 

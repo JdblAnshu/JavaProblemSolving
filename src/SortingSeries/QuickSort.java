@@ -1,5 +1,8 @@
 public class QuickSort {
-
+//Best Case: (Ω(n log n)), Occurs when the pivot element divides the array into two equal halves.
+//Average Case (θ(n log n)), On average, the pivot divides the array into two parts, but not necessarily equal.
+//Worst Case: (O(n²)), Occurs when the smallest or largest element is always chosen as the pivot (e.g., sorted arrays).
+//Done
 	private static void quickSort(int[] arr, int low, int high) {
 
 		if(low < high){

@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/TreeSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/StackSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Java8StreamsProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/JavaSpringBoot" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Stack;
-
+//Done
 public class NextGreaterElementOnRight {
 
 	public static int[] nextGreaterElementRight(int arr[]) {

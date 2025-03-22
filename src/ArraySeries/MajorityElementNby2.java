@@ -1,3 +1,5 @@
+//https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/
+//Done
 public class MajorityElementNby2 {
 	/*
 	public int majorityElement(int[] v) {

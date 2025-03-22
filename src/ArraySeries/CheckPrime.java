@@ -1,5 +1,5 @@
 public class CheckPrime {
-
+//Done
 	public static boolean checkPrime(int num){
 		int count = 0;
 

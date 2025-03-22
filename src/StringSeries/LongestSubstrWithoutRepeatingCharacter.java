@@ -1,8 +1,8 @@
 public class LongestSubstrWithoutRepeatingCharacter {
-
-
+	//Done
 	public static void main(String[] args) {
 		String str = "hithere";
+		//ABCBA
 	/*
 	class Solution {
     public int lengthOfLongestSubstring(String s) {
@@ -13,7 +13,7 @@ public class LongestSubstrWithoutRepeatingCharacter {
         for (int right = 0; right < s.length(); right++) {
             char c = s.charAt(right);
             count.put(c, count.getOrDefault(c, 0) + 1);
-
+			//Example abac
             while (count.get(c) > 1) {
                 char leftChar = s.charAt(left);
                 count.put(leftChar, count.get(leftChar) - 1);

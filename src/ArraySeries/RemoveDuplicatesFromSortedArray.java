@@ -1,6 +1,6 @@
 public class RemoveDuplicatesFromSortedArray {
 
-
+//Done
 	private static int removeDuplicatesFromSortedArray(int[] arr) {
 
 		int i = 0;

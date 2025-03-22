@@ -1,5 +1,5 @@
 public class CountDivisibleDigit {
-
+//Done
 	public static int evenlyDivides(int num) {
 		int m = num;
 		int counter = 0;

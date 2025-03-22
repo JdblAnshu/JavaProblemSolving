@@ -1,4 +1,5 @@
 public class ReverseNumber {
+	//Done
 	public static int reverse(int number) {
 		int result = 0;
 		while(number > 0) {

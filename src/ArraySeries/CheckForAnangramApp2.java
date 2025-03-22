@@ -1,5 +1,5 @@
 public class CheckForAnangramApp2 {
-
+//Done
 	private static void checkAnagramApp2(String str1, String str2) {
 
 		int[] freq = new int[26];

@@ -1,3 +1,7 @@
+//https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/
+//Given an unsorted array of integers, the task is to find the number of subarrays having a sum exactly equal to a given number k.
+
+//Done
 public class CountSubarraySum {
 	/*
 	count subarray sum :

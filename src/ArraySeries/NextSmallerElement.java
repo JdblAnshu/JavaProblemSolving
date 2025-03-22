@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Stack;
-
+//Done
 public class NextSmallerElement {
 //https://www.youtube.com/watch?v=_RtghJnM1Qo
 //	Input: [4, 8, 5, 2, 25]
@@ -55,7 +55,7 @@ public class NextSmallerElement {
 		return pse;
 
 	}
-
+	//Done
 	public static int[] nextSmallerElement(int[] arr) {
 
 		//int[] arr = {4, 8, 51, 2, 25};

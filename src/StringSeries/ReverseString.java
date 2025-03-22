@@ -1,5 +1,5 @@
 public class ReverseString {
-
+//Done
 //String immutability means that once a string object is created, its value cannot be changed. Any modification results in the creation of a new string.
 //Strings are immutable for security, performance, and thread safety reasons. It prevents unwanted changes and helps optimize memory usage.
 	//No, we cannot modify a string directly. Any modification creates a new string object.
@@ -25,10 +25,11 @@ public class ReverseString {
 
 		//Other important examples
 		String s1 = "knowledge";
+		System.out.println("S1 initial hashcode " + s1.hashCode());
 		String s2 = s1;
 		s1 = s1.concat(" base");
-		System.out.println("Value of s2 is : " + s2);
-		System.out.println(s1);
+		System.out.println("Value of s2 is : " + s2 + " hashcode" + s2.hashCode());
+		System.out.println(s1 + "hashcode" + s1.hashCode());
 
 		String s3 = "Test1";
 		String s4 = "Test1";

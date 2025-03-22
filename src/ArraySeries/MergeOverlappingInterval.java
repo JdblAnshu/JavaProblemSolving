@@ -1,5 +1,5 @@
 public class MergeOverlappingInterval {
-	//Check in geeksforgeeks
+	//Check in geeksforgeeks https://www.geeksforgeeks.org/merging-intervals/
 	/*
 	Solution in suggestion using lambdas and collections Array list
 

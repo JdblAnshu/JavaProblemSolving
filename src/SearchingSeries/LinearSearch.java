@@ -1,5 +1,5 @@
 public class LinearSearch {
-
+//Done
 	// Function to perform linear search
 	public static int linearSearch(int[] arr, int target) {
 		// Iterate through the array
