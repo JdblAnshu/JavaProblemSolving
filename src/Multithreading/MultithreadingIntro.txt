@@ -1,0 +1,2 @@
+https://www.youtube.com/watch?v=091vJWjl1A4&list=PLA3GkZPtsafYhmrZR_1nmQqfFSnkftOud&index=1
+https://www.interviewbit.com/multithreading-interview-questions/#what-is-thread-start-and-thread-run-methods-in-java

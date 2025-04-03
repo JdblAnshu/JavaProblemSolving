@@ -1,5 +1,6 @@
 public class BubbleSort {
 	// Method to perform bubble sort
+	//https://www.geeksforgeeks.org/bubble-sort-algorithm/
 	public static void bubbleSort(int[] arr) {
 		int n = arr.length;
 
@@ -17,6 +18,8 @@ public class BubbleSort {
 			}
 		}
 	}
+
+
 
 	// Method to print an array
 	public static void printArray(int[] arr) {

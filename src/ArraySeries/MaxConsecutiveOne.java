@@ -18,7 +18,7 @@ class Solution {
                 j = 0;
             }
         }
-
+//To take care of the last set of 1
                 if(j>maxConsecutiveLength){
                     maxConsecutiveLength = j;
                 }

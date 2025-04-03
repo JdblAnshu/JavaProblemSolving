@@ -16,6 +16,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/StackSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Java8StreamsProblem" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/JavaSpringBoot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Multithreading" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/PatternsQuestion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/HashingTheoryAndQuestions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Recursion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/FinalProblemsSet" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

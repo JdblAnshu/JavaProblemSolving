@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class MaximumSubarraySum {
 //Done
 	/*
@@ -20,14 +23,18 @@ public class MaximumSubarraySum {
 	private static void maximumSubArray(int[] arr) {
 
 		int maxSum = Integer.MIN_VALUE;
+		ArrayList<Integer> list = new ArrayList<>();
 		int sum = 0;
 		for(int i=0;i<arr.length;i++){
 			sum = sum + arr[i];
+			list.add(arr[i]);
 			if(sum>maxSum){
 				maxSum = sum;
+				
 			}
 			if(sum<0)
 				sum = 0;
+			//list = null;
 		}
 
 		System.out.println("Maximum subarray sum is " + maxSum);

@@ -1,5 +1,12 @@
 import java.util.Arrays;
+import java.util.List;
+import java.util.Objects;
 import java.util.Stack;
+
+
+//object --- non null print
+
+
 //Done
 public class NextGreaterElementOnRight {
 
@@ -21,6 +28,9 @@ public class NextGreaterElementOnRight {
 			stk.push(arr[i]);
 
 		}
+		List<Integer> list = List.of();
+		
+
 
 		return nge;
 	}
