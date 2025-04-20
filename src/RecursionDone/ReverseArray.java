@@ -3,12 +3,12 @@ public class ReverseArray {
 	public static void reverseArray(int arr[], int i, int j) {
 		if (i >= j)
 			return;
-		if (i < j) {
+		//if (i < j) {
 			int temp = arr[i];
 			arr[i] = arr[j];
 			arr[j] = temp;
-		}
-		reverseArray(arr, ++i, --j);
+		//}
+		reverseArray(arr, i+1, j-1);
 	}
 
 
@@ -18,7 +18,7 @@ public class ReverseArray {
 		int j = arr.length - 1;
 		reverseArray(arr, i, j);
 		for (int e : arr) {
-			System.out.println(e);
+			System.out.print(e +" ");
 		}
 
 	}

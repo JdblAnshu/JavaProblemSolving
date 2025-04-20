@@ -8,7 +8,7 @@
 
 
 class SelectionSort {
-
+//https://www.programiz.com/dsa/selection-sort
 	static void selectionSort(int[] arr) {
 		int n = arr.length;
 		for (int i = 0; i < n - 1; i++) {

@@ -1,14 +1,17 @@
-package TODO;
+package FinalSheet;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Stack;
+
+//https://takeuforward.org/data-structure/topological-sort-algorithm-dfs-g-21/
 //https://takeuforward.org/data-structure/topological-sort-using-dfs/%201%202
 class TopologicSort {
 
-	static void findTopoSort(int node, int vis[], ArrayList<ArrayList<Integer>> adj, Stack<Integer> st) {
+	static void findTopoSortDFS(int node, int vis[], ArrayList<ArrayList<Integer>> adj, Stack<Integer> st) {
 		vis[node] = 1;
 		for(Integer it: adj.get(node)) {
 			if(vis[it] == 0) {
-				findTopoSort(it, vis, adj, st);
+				findTopoSortDFS(it, vis, adj, st);
 			}
 		}
 		st.push(node);
@@ -19,7 +22,7 @@ class TopologicSort {
 
 		for(int i = 0;i<N;i++) {
 			if(vis[i] == 0) {
-				findTopoSort(i, vis, adj, st);
+				findTopoSortDFS(i, vis, adj, st);
 			}
 		}
 
@@ -57,8 +60,7 @@ class TopologicSort {
 	}
 }
 
-// https://takeuforward.org/data-structure/topological-sort-bfs/
-// https://www.geeksforgeeks.org/problems/topological-sort/1
+
 //public class TopologicSort {
 //}
 /* using BFS

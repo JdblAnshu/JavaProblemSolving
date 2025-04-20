@@ -27,6 +27,7 @@ public class CountFreqElements {
 		for(int e:freqChar){
 
 //			System.out.print(e + " <-----> " + (freqChar[e-'a']));
+			//System.out.print(List.of(freqChar[e - 'a']));
 			System.out.print(List.of(freqChar[e - 'a']));
 
 		}

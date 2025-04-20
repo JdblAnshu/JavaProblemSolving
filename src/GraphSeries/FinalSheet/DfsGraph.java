@@ -1,11 +1,12 @@
+package FinalSheet;
+
 import java.util.ArrayList;
 import java.util.List;
 //Done
 class DfsGraph {
 
 	// Recursive function for DFS traversal
-	static void DFSRec(List<List<Integer> > adj,
-					   boolean[] visited, int s){
+	static void DFSRec(List<List<Integer> > adj, boolean[] visited, int s){
 		// Mark the current vertex as visited
 		visited[s] = true;
 

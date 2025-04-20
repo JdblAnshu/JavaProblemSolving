@@ -7,20 +7,20 @@
       <sourceFolder url="file://$MODULE_DIR$/src/ArraySeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/DynamicProgrammingSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/GraphSeries" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/LinkedListSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/MostAskedInterviewQuestions" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/SearchingSeries" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/SortingSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/StringSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/TreeSeries" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/StackSeries" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Java8StreamsProblem" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/JavaSpringBoot" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Multithreading" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/PatternsQuestion" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/HashingTheoryAndQuestions" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Recursion" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/FinalProblemsSet" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/HashingTheoryAndQuestionsDone" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/LinkedListSeriesDone" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/RecursionDone" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/SearchingSeriesDone" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/SortingSeriesDone" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/StackQueueSeriesDone" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

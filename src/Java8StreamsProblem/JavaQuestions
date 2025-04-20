@@ -1,0 +1,128 @@
+
+Question 2 :  What are the Enum in Java ?
+Question 3 :  What are the Differences between an Iterator and ListIterator in Java?
+Question 4 :  What are the differences between ArrayList and LinkedList ?
+Question 5 :  What are the differences between HashMap , synchronized-hashmap and ConcurrentHashMap??
+Question 6:  What is internal working of hashmap in Java ?
+Question 7 :  What is Association, Composition and Aggregation in Java ?
+
+Question 8 :  What will be the output of following program ?
+String s1 = “JavaCharter”; String s2 = new String((“JavaCharter”)); String s3 = “JavaCharter”;
+System.out.println(s1.equals(s3)); System.out.println(s1.equals(s2));
+
+Question 9 :  What will be the output of following block of code.
+try { System.out.println(“Inside try block”); System.exit(0); } catch(Exception e) { System.out.println(“Exception caught:”+e); } finally { System.out.println(“In finally block”); }
+
+/////////////////////////////
+Question 10 :How can you Remove all occurrences of an element from a List in Java ?
+Question 11 :  Why default methods in interfaces is introduced in Java 8 ?
+Question 12 :  What are the Java8 interface changes ?
+Question 13:  How can you find a missing number in list ? Please write a program
+Question 14 :  Which design patterns you have used ?
+Question 15 :  What is factory design pattern?
+
+  public static int findMissingNumber(List<Integer> list, int n) {
+        int xorAll = 0;
+        int xorList = 0;
+
+        // XOR all numbers from 1 to n
+        for (int i = 1; i <= n; i++) {
+            xorAll ^= i;
+        }
+
+        // XOR all numbers in the list
+        for (int num : list) {
+            xorList ^= num;
+        }
+
+        // The missing number will be the result of XOR between xorAll and xorList
+        return xorAll ^ xorList;
+    }
+
+
+/////////////////////////////////
+Question 1 :  Can you please provide real world example of OOPS Concepts ?
+Question 2 :  Are Singleton classes threa-safe in Java?
+Question 3 :  How to create a immutable class in Java ?
+Question 4 :  Can we override the static method in Java ?
+Question 5 :  Can you please explain the internal working of HashMap in Java ?
+Question 6 :  Can you write the Java program using Java 8 to find out the Occurrences of each characters in a String ?
+Question 7 :  What is Parallel stream in Java?
+Question 8 :  How did you handle security in your Spring boot based application ?
+Question 9 :  What are the differences between SOAP and REST Webservices?
+Question 10 :  What is Spring Boot Actuator ?
+Question 11 :  How did you optimize your application ?
+Question 12 :  What is batch size in SQL ?
+
+
+////////////////////////////////////
+Question 1:  Please brief about yourself.
+Question 2 :  What are the different Spring — Bean Scopes?
+Question 3 :  When to use Microservices Architecture Over Monolithic?
+Question 4 :  What are the things you need to keep in mind when you develop a microservice based architecture application?
+Question 5 :  How will you handle Multiple microservice instances with the same service?
+Question 6 :  Let’s say you want to make parallel call for the services, how can you do that using Java ?
+Question 7  : When to Use a Parallel Stream in Java?
+Question 8 :  Which are the different Java Collections Classes?
+Question 9 :  Can we use object as a key in HashMap in Java? If Yes then How can you implement that?
+Question 10 :What are the Benefits of using Java Optional?
+Question 11:  What all things you configure on APIGEE Edge ?
+Question 12 :  How Ping federate works in your project?
+Question 13 :  How do you secure your APIs?
+
+
+/////////////////////////////////////////
+
+Question 12  : Have you worked with Hibernate? I said yes …before few years. He asked below question.
+How will I write the code using Hibernate? what will be the steps in my DAO classes and it’s implementation class?
+Question 13  : What is change in Java Memory Model from Java8 onwards?
+Question 14  : What is ConcurrentHashMap?
+Question 15: What are main Java8 features?
+Question 16 :  What is Lamda expression?
+Question 17 :  What is structure of Lamda expression?
+Question 18 :  How can I modify the server port in Spring Boot project?
+Question 19 :  Let’s say if I have an interface and there are many implementators of it and they are calling interface method using different objects,, then will it work?
+Question 20 :  What is No-argument constructor?
+Question 21 :  What is fail-fast and fail safe collections?
+Question 22 :  What are the Differences between == and equals() method in Java?
+Question 23 :  How a Null Pointer can be checked using Java 8 Optional?
+Question 24 :  Can you write down the syntax of Optional?
+Question 25 :  Is there any way not to implement interface methods in Java?
+Question 26 :  What are the Differences between abstract class and interface?
+Question 27 :  What is SerialVersionUID in Java?
+
+
+////////////////////////////////////////////
+Note :  To find answers with details , please watch my YouTube video . ( URL is embedded in this post at bottom of this page ).
+Question 1 :  Let’s say I have Strings like following :
+String s1 = “Kailash” String s2 = “Kailash” String s3 = new String(“Kailash”);
+How many memory allocation will be there for these assignments/code? What will be output of System.out.println(s1);
+Question 2 :  What are the benefits of creating an abstract class?
+Question 3 :  If I have a list of Strings, how will I remove the duplicates from it?
+Question 4 :  What is return type of Set ?
+Question 5 :  What is difference between  @Controller  and  @RestController  annotation?
+Question 6 :  How can I tell my REST API method that I need to return response in which format?
+Question 7 :  If I want to supply another parameter along with Response body, how can I do that?
+Question 8 :  What is Serialization in Java ?
+Question 9 :  Does An abstract class required to have an abstract method inside ?Can we declare a class as Abstract without having any abstract method?
+Question 10 :  How one can pass the path parameter in URL of rest API?
+Question 11 :  Why not  serialize  abstract classes in Java?
+
+
+Question 12  : Have you worked with Hibernate? I said yes …before few years. He asked below question.
+How will I write the code using Hibernate? what will be the steps in my DAO classes and it’s implementation class?
+Question 13  : What is change in Java Memory Model from Java8 onwards?
+Question 14  : What is ConcurrentHashMap?
+Question 15: What are main Java8 features?
+Question 16 :  What is Lamda expression?
+Question 17 :  What is structure of Lamda expression?
+Question 18 :  How can I modify the server port in Spring Boot project?
+Question 19 :  Let’s say if I have an interface and there are many implementators of it and they are calling interface method using different objects,, then will it work?
+Question 20 :  What is No-argument constructor?
+Question 21 :  What is fail-fast and fail safe collections?
+Question 22 :  What are the Differences between == and equals() method in Java?
+Question 23 :  How a Null Pointer can be checked using Java 8 Optional?
+Question 24 :  Can you write down the syntax of Optional?
+Question 25 :  Is there any way not to implement interface methods in Java?
+Question 26 :  What are the Differences between abstract class and interface?
+Question 27 :  What is SerialVersionUID in Java?
