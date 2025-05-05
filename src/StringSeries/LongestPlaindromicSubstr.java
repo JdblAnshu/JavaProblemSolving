@@ -1,11 +1,10 @@
-public class LongestPlaindromicSubstr {
-}
 
-/*
+
+
 // Java program to find the longest
 // palindromic substring.
 
-class GfG {
+class LongestPlaindromicSubstr {
 
     // Function to find the longest palindrome substring
     static String longestPalindrome(String s) {
@@ -48,4 +47,3 @@ class GfG {
     }
 }
 
- */

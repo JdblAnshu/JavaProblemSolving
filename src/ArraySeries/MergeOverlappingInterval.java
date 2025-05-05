@@ -1,4 +1,49 @@
-public class MergeOverlappingInterval {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+class MergeOverlappingInterval {
+
+	static List<int[]> mergeOverlap(int[][] arr) {
+		int n = arr.length;
+
+		Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
+		List<int[]> res = new ArrayList<>();
+
+		int[] prev = arr[0];
+
+		for (int i = 1; i < arr.length; i++) {
+			int[] interval = arr[i];
+			if (interval[0] <= prev[1]) {
+				prev[1] = Math.max(prev[1], interval[1]);
+			} else {
+				res.add(prev);
+				prev = interval;
+			}
+		}
+
+		res.add(prev);
+		return res;
+	}
+
+	public static void main(String[] args) {
+		int[][] arr = {{7, 8}, {1, 5}, {2, 4}, {4, 6}};
+		List<int[]> res = mergeOverlap(arr);
+
+		for (int[] interval : res) {
+			System.out.println(interval[0] + " " + interval[1]);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+class MergeOverlappingInterval2 {
 	//Check in geeksforgeeks https://www.geeksforgeeks.org/merging-intervals/
 	/*
 	Solution in suggestion using lambdas and collections Array list

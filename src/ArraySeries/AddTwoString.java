@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class AddTwoString {
-	public String addStrings(String num1, String num2) {
+	public static String addStrings(String num1, String num2) {
 		StringBuilder str = new StringBuilder();
 
 		int i = num1.length() - 1, j = num2.length() - 1, carry = 0, sum;
@@ -19,6 +19,8 @@ class AddTwoString {
 	}
 
 	public static void main(String[] args) {
+
+		System.out.println(addStrings("116","229"));
 //		String[] str = {"123","12333","1223"};
 //
 //		StringBuilder sb = new StringBuilder();

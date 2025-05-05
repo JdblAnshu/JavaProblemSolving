@@ -49,6 +49,8 @@ public class ReverseString {
 
 
 
+
+
 		//StringBuffer: Is thread-safe, meaning its methods are synchronized. This ensures that only one thread can access the method at a time, which can prevent issues when multiple threads are modifying a StringBuffer object concurrently.
 		//StringBuilder: Is not thread-safe because its methods are not synchronized. This can lead to performance benefits in single-threaded applications or scenarios where thread safety is not a concern, as it avoids the overhead of synchronization.
 
