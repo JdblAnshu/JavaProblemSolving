@@ -21,3 +21,6 @@ public class LcmAndGcd {
     }
 	 */
 }
+
+
+//lcm = a into b by

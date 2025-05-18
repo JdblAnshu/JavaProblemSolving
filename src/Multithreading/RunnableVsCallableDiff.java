@@ -5,16 +5,42 @@ public class RunnableVsCallableDiff {
 		Callable<String> task = () -> {
 			System.out.println("Callable Task: Running in thread " + Thread.currentThread().getName());
 			Thread.sleep(1000); // Simulate work
+			System.out.println("Callable wait  Task: Completed");
 			return "Task Result";
 		};
 
 		ExecutorService executor = Executors.newSingleThreadExecutor();
-		Future<String> future = executor.submit(task);
+
 
 		// Get the result (blocks until task completes)
+
+
+		//executor.shutdown();
+////////////////////////////////////////
+		//Runnable example
+		Runnable task3 = () -> {
+			System.out.println("Runnable Task: Running in thread " + Thread.currentThread().getName());
+			try {
+				Thread.sleep(1000); // Simulate work
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println("Runnable Task: Completed");
+		};
+
+		//ExecutorService executor2 = Executors.newSingleThreadExecutor();
+		Future<String> future = executor.submit(task);
+		 executor.submit(task3);
+		 System.out.println( "Thread name ----> " + Thread.currentThread().getName());
+		 Thread.sleep(5000);
 		System.out.println("Result: " + future.get());
 
+		// Get the result (blocks until task completes)
+		//System.out.println("Result: " + future2.get());
+
 		executor.shutdown();
+
+
 	}
 }
 

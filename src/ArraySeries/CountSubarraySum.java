@@ -1,37 +1,41 @@
 //https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/
 //Given an unsorted array of integers, the task is to find the number of subarrays having a sum exactly equal to a given number k.
 
+import java.util.HashMap;
+import java.util.Map;
+
 //Done
 public class CountSubarraySum {
-	/*
-	count subarray sum :
-public int subarraySum(int[] a, int k) {
-        int n = a.length; // size of the array.
-        int count = 0;
-        Map<Integer, Integer> preSumToFrequencyMap = new HashMap<>();
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            //calculate the prefix sum till index i:
-            sum += a[i];
+	// Function to find number of subarrays with sum as k
+	static int countSubarrays(int[] arr, int k) {
 
-            // if the sum = k, update the maxLen:
-            if (sum == k) {
-                count++;
-            }
+		// HashMap to store prefix sums frequencies
+		Map<Integer, Integer> prefixSums = new HashMap<>();
+		int res = 0;
+		int currSum = 0;
 
-            // calculate the sum of remaining part i.e. x-k:
-            int rem = sum - k;
+		for (int i = 0; i < arr.length; i++) {
+			// Add current element to sum so far.
+			currSum += arr[i];
 
-            //Calculate the length and update maxLen:
-            if (preSumToFrequencyMap.containsKey(rem)) {
-                count+= preSumToFrequencyMap.get(rem);
-            }
+			// If currSum is equal to desired sum, then a new subarray is found.
+			if (currSum == k)
+				res++;
 
-            //Finally, update the map checking the conditions:
-            preSumToFrequencyMap.put(sum,preSumToFrequencyMap.getOrDefault(sum,0) + 1);
-        }
+			// Check if the difference exists in the prefixSums map.
+			if (prefixSums.containsKey(currSum - k))
+				res += prefixSums.get(currSum - k);
 
-        return count;
-    }
-	 */
+			// Add currSum to the set of prefix sums.
+			prefixSums.put(currSum, prefixSums.getOrDefault(currSum, 0) + 1);
+		}
+
+		return res;
+	}
+
+	public static void main(String[] args) {
+		int[] arr = {10, 2, -2, -20, 10};
+		int k = 10;
+		System.out.println(countSubarrays(arr, k));
+	}
 }

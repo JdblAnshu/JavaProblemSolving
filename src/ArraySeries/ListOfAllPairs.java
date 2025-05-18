@@ -1,13 +1,11 @@
 import java.util.*;
 
-public class ListOfAllPairs {
-}
 
 // Java program to find all distinct pairs
 // with given sum using HashMap
 
 //https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/
-class GfG {
+public class ListOfAllPairs {
 	static List<List<Integer>> distinctPairs(int[] arr, int target) {
 		List<List<Integer>> res = new ArrayList<>();
 		int n = arr.length;
