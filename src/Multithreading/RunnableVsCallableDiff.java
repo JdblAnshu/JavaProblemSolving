@@ -4,7 +4,7 @@ public class RunnableVsCallableDiff {
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
 		Callable<String> task = () -> {
 			System.out.println("Callable Task: Running in thread " + Thread.currentThread().getName());
-			Thread.sleep(1000); // Simulate work
+			Thread.sleep(2000); // Simulate work
 			System.out.println("Callable wait  Task: Completed");
 			return "Task Result";
 		};
@@ -21,7 +21,7 @@ public class RunnableVsCallableDiff {
 		Runnable task3 = () -> {
 			System.out.println("Runnable Task: Running in thread " + Thread.currentThread().getName());
 			try {
-				Thread.sleep(1000); // Simulate work
+				Thread.sleep(2000); // Simulate work
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -31,10 +31,9 @@ public class RunnableVsCallableDiff {
 		//ExecutorService executor2 = Executors.newSingleThreadExecutor();
 		Future<String> future = executor.submit(task);
 		 executor.submit(task3);
-		 System.out.println( "Thread name ----> " + Thread.currentThread().getName());
-		 Thread.sleep(5000);
+		 System.out.println( "Thread name ----> " + Thread.currentThread().getName());//Proves that main thread will submit task3 to blocking queue of executorservice and move ahead even though no thread is available to pick task3.
 		System.out.println("Result: " + future.get());
-
+		System.out.println("End of program");
 		// Get the result (blocks until task completes)
 		//System.out.println("Result: " + future2.get());
 

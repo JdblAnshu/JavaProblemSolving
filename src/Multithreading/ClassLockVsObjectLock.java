@@ -33,7 +33,7 @@ class MyClass {
 	private int instanceCount = 0;
 
 	// Instance synchronized method (implicit object lock)
-	public synchronized void increment() {
+	public void increment() {
 		instanceCount++;
 	}
 

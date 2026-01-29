@@ -1,13 +1,18 @@
+import java.util.Locale;
+import java.util.Map;
+import java.util.HashMap;
 public class LongestSubstrWithoutRepeatingCharacter {
 	//Done
 	public static void main(String[] args) {
 		String str = "hithere";
 		//ABCBA
-	/*
-	class Solution {
+	}
     public int lengthOfLongestSubstring(String s) {
         int maxLength = 0;
         int left = 0;
+		String str = "abcabcbb";
+		str.toLowerCase();
+
         Map<Character, Integer> count = new HashMap<>();
 
         for (int right = 0; right < s.length(); right++) {
@@ -25,8 +30,4 @@ public class LongestSubstrWithoutRepeatingCharacter {
 
         return maxLength;
     }
-}
-	 */
-
-	}
 }

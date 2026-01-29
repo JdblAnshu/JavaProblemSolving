@@ -1,5 +1,7 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class FirstNonRepeatingCharacterString {
 
@@ -15,6 +17,21 @@ public class FirstNonRepeatingCharacterString {
 
 			}
 		}
+		Character result = input.chars()
+				.mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(
+						c -> c,
+						LinkedHashMap::new,
+						Collectors.counting()
+				))
+				.entrySet()
+				.stream()
+				.filter(e -> e.getValue() == 1)
+				.findFirst()
+				.map(Map.Entry::getKey)
+				.orElse(null);
+
+
 //Solution
 //		HashMap<Character, Integer> charCountMap = new HashMap<>();
 //
