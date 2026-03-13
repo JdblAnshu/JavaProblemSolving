@@ -1,10 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 class MergeOverlappingInterval {
 
@@ -12,6 +8,12 @@ class MergeOverlappingInterval {
 		int n = arr.length;
 
 		Arrays.sort(arr, (a, b) -> Integer.compare(a[0], b[0]));
+
+		for (int[] row : arr) {
+			//Printed to test is getting sorted or not
+			System.out.println(Arrays.toString(row));
+		}
+
 		List<int[]> res = new ArrayList<>();
 
 		int[] prev = arr[0];

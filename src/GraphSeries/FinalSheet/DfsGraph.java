@@ -65,17 +65,6 @@ class DfsGraph {
 	}
 }
 
-/*
-
-dfs(List, node, visited )
-{
-mark node as visited
-dfs(list, node , visited)
-}
-
- */
-
-
 
 
 
